@@ -14,7 +14,7 @@ import seaborn as sns
 
 # import dataset and split it into training and testing
 df_wine = pd.read_csv('/Users/yuxin/Desktop/course/2018Fall/IE598/HW/HW5/wine.csv')
-X, y = df_wine.iloc[:, 1:13].values, df_wine['Class']
+X, y = df_wine.iloc[:, 0:13].values, df_wine['Class']
 X_train, X_test, y_train, y_test = train_test_split(X, y,
                                                     test_size=0.2,
                                                     random_state=42,
